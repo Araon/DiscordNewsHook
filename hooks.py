@@ -1,16 +1,17 @@
 from dhooks import Webhook, Embed
+from inshorts import getNews
 import json
 import time
 
-hook = Webhook("https://discord.com/api/webhooks/756417999971287071/ZXrh-fJIpapJlDg2wjv4RZvDbh-9QReINIhKK5frjB3MmsjLfql-N1AIym9fTiNxCcwP")
+urlLole = "https://discord.com/api/webhooks/756417999971287071/ZXrh-fJIpapJlDg2wjv4RZvDbh-9QReINIhKK5frjB3MmsjLfql-N1AIym9fTiNxCcwP"
 
+#testUrl = "https://discord.com/api/webhooks/756397412784013402/pg6hyvthWE8-U1zyu3v3Hv1evbx8r36VMajXi3MpZK8Hlb-Uw5PmgEVSuvI0IUKuz7m-"
 
+hook = Webhook(urlLole)
 
-with open('data.json', 'r') as fp:
-    newz = json.load(fp)
+newz = getNews("")
 
-
-
+hook.send('**Daily Briefing**')
 
 for bits in newz['data']:
 	newsTitle = bits['title']
