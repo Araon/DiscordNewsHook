@@ -1,8 +1,8 @@
 # Discord News web Hook
-A webhook that scraps [Inshort](https://inshort/read/en)
+A webhook that scraps [Inshort](https://inshorts.com/en/read)
 
 What it does?
-* Scrapes all news on [Inshort](https://inshort/read/en) website
+* Scrapes all news on [Inshort](https://inshorts.com/en/read) website
 * Formats the news and sends on the specifed discord channel
 
 ### requirements
@@ -27,4 +27,4 @@ python3 hooks.py
 ![Result](https://media.giphy.com/media/CRRKWCo6gt38kq5XNw/giphy.gif)
 
 ## *Author Name*
-[Araon](https://github.com/Araon)
+![Araon](https://github.com/Araon)
